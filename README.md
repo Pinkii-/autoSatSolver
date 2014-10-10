@@ -2,6 +2,7 @@ autoSatSolver
 =============
 
 Preparacion:
+
   En este directorio debes poner tu satsolver con el nombre (Reemplaza el que ya hay):
   
     shitSatSolver.cpp
@@ -9,7 +10,8 @@ Preparacion:
   Tu satsolver tiene que tener el cout de la siguiente forma:
 
     tiempo << " " << propagaciones << " " << decisiones/tiempo << " SATISFIABLE" << endl;
-o
+
+
     tiempo << " " << propagaciones << " " << decisiones/tiempo << " UNSATISFIABLE" << endl;
 
   En el satsolver por default ya tiene estas salidas por si no se entiende.
