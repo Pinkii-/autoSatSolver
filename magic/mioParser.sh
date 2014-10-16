@@ -1,3 +1,14 @@
+cd returnMio/
+rm ../salidaMiSat
+for f in *
+do
+	echo "MISAT Agregando $f a la salida" "$(cat $f >> salidaMiSat)"
+done
+
+mv salidaMiSat ../.
+
+cd ..
+
 rm -rf tmp/
 echo "BORRO TMP"
 mkdir tmp/

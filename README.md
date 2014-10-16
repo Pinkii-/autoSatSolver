@@ -2,6 +2,7 @@ autoSatSolver
 =============
 
 Preparacion:
+
   En este directorio debes poner tu satsolver con el nombre (Reemplaza el que ya hay):
   
     shitSatSolver.cpp

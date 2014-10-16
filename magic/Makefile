@@ -11,13 +11,12 @@ parser: parser.java miniparser.java
 	javac parser.java
 
 execute: exe.sh
-	sh exe.sh > salidaMiSat
-	sh exePico.sh
+	sh exe.sh
 
-parseamelotodaa: salidaMiSat picoParser.sh
-	sh picoParser.sh
+parseamelotodaa: mioParser.sh
+	sh mioParser.sh
 	java parser salidaMiSat salidaPicoSat > ../whereYouAt
 
 clean:
 
-	rm -rf satSolver resultado miSatSolver satSolverSimple satSolverSimple2 satSolverSimple3 satSolverSimple4O2 satSolverSimple4O3 picosat parser.class miniparser.class salidaMiSat salidaPicoSat tmp/ *~ returnPico/
+	rm -rf satSolver resultado miSatSolver satSolverSimple satSolverSimple2 satSolverSimple3 satSolverSimple4O2 satSolverSimple4O3 picosat parser.class miniparser.class salidaMiSat salidaPicoSat tmp/ *~ returnPico/ returnMio/
